@@ -55,6 +55,18 @@ ol, ul, li {
   font-style: normal;
   font-display: swap;
 }
+header {
+  background-color: #34353a;
+  padding: 16px 30px;
+}
+header .navbar-light .navbar-nav .nav-link {
+  color: #a7a7a9;
+  font-size: 20px;
+}
+header .navbar-light .navbar-nav .nav-link.active {
+  color: #fff;
+}
+
 #nav-burger {
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
