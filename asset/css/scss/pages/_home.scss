@@ -1,0 +1,13 @@
+.banner{
+    background-color: $darkgery;
+    h1{
+        color: $lightgrey2;
+    }
+    .banner-wrapper{
+        @include display-f($jc:left);
+    }
+    @include rfs(100px , padding-top);
+    .banner-content{
+        @include rfs(100px , padding-bottom);
+    }
+}

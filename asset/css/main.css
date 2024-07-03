@@ -55,6 +55,11 @@ ol, ul, li {
   font-style: normal;
   font-display: swap;
 }
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 header {
   background-color: #34353a;
   padding: 16px 30px;
@@ -64,7 +69,7 @@ header .navbar-light .navbar-nav .nav-link {
   font-size: 20px;
 }
 header .navbar-light .navbar-nav .nav-link.active {
-  color: #fff;
+  color: #ffffff;
 }
 
 #nav-burger {
@@ -151,4 +156,30 @@ header .navbar-light .navbar-nav .nav-link.active {
 
 .navbar-toggler:focus {
   box-shadow: unset;
+}
+
+.banner {
+  background-color: #34353a;
+  padding-top: calc(0.87505375rem + 4.479121875vw);
+}
+.banner h1 {
+  color: #ababae;
+}
+.banner .banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+@media (min-width: 1920px) {
+  .banner {
+    padding-top: 6.25rem;
+  }
+}
+.banner .banner-content {
+  padding-bottom: calc(0.87505375rem + 4.479121875vw);
+}
+@media (min-width: 1920px) {
+  .banner .banner-content {
+    padding-bottom: 6.25rem;
+  }
 }/*# sourceMappingURL=main.css.map */
