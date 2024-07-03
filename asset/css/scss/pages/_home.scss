@@ -1,13 +1,28 @@
 .banner{
+    @include rfs(100px , padding-top);
     background-color: $darkgery;
     h1{
         color: $lightgrey2;
+        font-size: 46px;
+        span{
+            color: $yellow;
+            font-size: 55px;
+            font-weight: bold;
+        }
     }
     .banner-wrapper{
         @include display-f($jc:left);
     }
-    @include rfs(100px , padding-top);
     .banner-content{
         @include rfs(100px , padding-bottom);
+        @include flexw(400px);
+    }
+    .banner-image{
+        @include flexw(calc(100% - 400px));
+        figure {
+            img{
+                @include fit-image;
+            }
+        }
     }
 }

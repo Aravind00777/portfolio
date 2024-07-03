@@ -159,27 +159,44 @@ header .navbar-light .navbar-nav .nav-link.active {
 }
 
 .banner {
-  background-color: #34353a;
   padding-top: calc(0.87505375rem + 4.479121875vw);
-}
-.banner h1 {
-  color: #ababae;
-}
-.banner .banner-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: left;
+  background-color: #34353a;
 }
 @media (min-width: 1920px) {
   .banner {
     padding-top: 6.25rem;
   }
 }
+.banner h1 {
+  color: #ababae;
+  font-size: 46px;
+}
+.banner h1 span {
+  color: #ffc86b;
+  font-size: 55px;
+  font-weight: bold;
+}
+.banner .banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
 .banner .banner-content {
   padding-bottom: calc(0.87505375rem + 4.479121875vw);
+  max-width: 400px;
+  flex-basis: 400px;
 }
 @media (min-width: 1920px) {
   .banner .banner-content {
     padding-bottom: 6.25rem;
   }
+}
+.banner .banner-image {
+  max-width: calc(100% - 400px);
+  flex-basis: calc(100% - 400px);
+}
+.banner .banner-image figure img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
