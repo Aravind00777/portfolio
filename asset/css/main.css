@@ -195,6 +195,10 @@ header .navbar-light .navbar-nav .nav-link.active {
   max-width: calc(100% - 400px);
   flex-basis: calc(100% - 400px);
 }
+.banner .banner-image figure {
+  max-width: 400px;
+  margin: 0 auto;
+}
 .banner .banner-image figure img {
   width: 100%;
   object-fit: contain;

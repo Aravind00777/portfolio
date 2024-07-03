@@ -20,6 +20,7 @@
     .banner-image{
         @include flexw(calc(100% - 400px));
         figure {
+           @include smcontainer(400px);
             img{
                 @include fit-image;
             }
