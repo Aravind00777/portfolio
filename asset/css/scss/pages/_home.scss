@@ -39,12 +39,12 @@
     @include rfs(100px, padding-top);
     @include rfs(100px, padding-bottom);
     background-color: $darkgery;
-
     h2 {
-        color: $white;
-        font-size: 50px;
-        font-weight: bold;
         @include rfs(40px , padding-bottom);
+        &.myskills{
+            @include text-align();
+            @include rfs(50px , padding-top);
+        }
     }
 
     .about_me {
@@ -60,8 +60,16 @@
             font-size: 30px;
             line-height: 1.4;
             color: $lightgrey2;
-
             
+        }
+        @include rfs(50px , padding-bottom);
+    }
+    .skills{
+        @include display-f();
+        flex-wrap: wrap;
+        gap: 10px;
+        li{
+            @include flexw(24%);
         }
     }
 }

@@ -60,6 +60,13 @@ ol, ul, li {
   margin: 0 auto;
 }
 
+h2 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
 header {
   background-color: #34353a;
   padding: 16px 30px;
@@ -221,9 +228,6 @@ header .navbar-light .navbar-nav .nav-link.active {
   }
 }
 .about h2 {
-  color: #ffffff;
-  font-size: 50px;
-  font-weight: bold;
   padding-bottom: calc(0.87501625rem + 1.354153125vw);
 }
 @media (min-width: 1920px) {
@@ -231,10 +235,20 @@ header .navbar-light .navbar-nav .nav-link.active {
     padding-bottom: 2.5rem;
   }
 }
+.about h2.myskills {
+  text-align: center;
+  padding-top: calc(0.8750225rem + 1.87498125vw);
+}
+@media (min-width: 1920px) {
+  .about h2.myskills {
+    padding-top: 3.125rem;
+  }
+}
 .about .about_me {
   padding-left: calc(0.875035rem + 2.9166375vw);
   position: relative;
   z-index: 1;
+  padding-bottom: calc(0.8750225rem + 1.87498125vw);
 }
 @media (min-width: 1920px) {
   .about .about_me {
@@ -257,4 +271,20 @@ header .navbar-light .navbar-nav .nav-link.active {
   font-size: 30px;
   line-height: 1.4;
   color: #ababae;
+}
+@media (min-width: 1920px) {
+  .about .about_me {
+    padding-bottom: 3.125rem;
+  }
+}
+.about .skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.about .skills li {
+  max-width: 24%;
+  flex-basis: 24%;
 }/*# sourceMappingURL=main.css.map */
