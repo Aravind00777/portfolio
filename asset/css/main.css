@@ -212,6 +212,8 @@ footer .divider.divider4 {
 }
 footer .contact-footer {
   text-align: center;
+  position: relative;
+  z-index: 1;
   margin-top: calc(-0.87507875rem - 6.562434375vw);
 }
 @media (min-width: 1920px) {
@@ -223,7 +225,27 @@ footer .contact-details {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: calc(0.875038125rem + 3.1770515625vw);
 }
+@media (min-width: 1920px) {
+  footer .contact-details {
+    padding-top: 4.6875rem;
+  }
+}
+footer .contact-details li {
+  background-color: #3d3e42;
+  max-width: 50%;
+  flex-basis: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .contact-details li .footer-icons {
+  max-width: 80px;
+  flex-basis: 80px;
+}
+
 .banner {
   padding-top: calc(0.87505375rem + 4.479121875vw);
   background-color: #34353a;
