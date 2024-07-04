@@ -67,9 +67,22 @@
     .skills{
         @include display-f();
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
+        row-gap: 30px;
         li{
-            @include flexw(24%);
+            @include flexw(calc(25% - 20px));
+            @include text-align();
+            height: 300px;
+            background-color: $darkgrey2;
+            @include display-f();
+            @include border-radius(20px);
+
+            h4{
+                color: $white;
+                font-size: 30px;
+                line-height: 1.4;
+                font-weight: 600;
+            }
         }
     }
 }
