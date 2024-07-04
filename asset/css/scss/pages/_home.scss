@@ -123,3 +123,32 @@
         }
     }
 }
+.experience{
+    @include rfs( 100px ,padding-top);
+    @include rfs( 100px ,padding-bottom);
+    background-color: $darkgrey2;
+    .experience-blk{
+        @include rfs(70px , padding-top);
+        @include smcontainer(80%);
+        color: $white;
+        li{
+            @include display-f($align:flex-start);
+            gap: 100px;
+            .year{
+                @include flexw(100px);
+            }
+            .contents-blk{
+                @include flexw(calc(100% - 100px));
+                h4{
+                    @include rfs(35px , font-size);
+                }
+                p{
+                    @include rfs(25px , font-size);
+                    line-height: 1.4;
+                    font-weight: 500;
+                }
+            }
+        }
+        
+    }
+}

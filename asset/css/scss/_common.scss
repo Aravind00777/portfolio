@@ -4,7 +4,7 @@
 }
 h2 {
     color: $white;
-    font-size: 50px;
+    @include rfs(50px , font-size);
     font-weight: bold;
     line-height: 1.5;
 }
