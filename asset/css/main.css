@@ -299,10 +299,19 @@ header .navbar-light .navbar-nav .nav-link.active {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  flex-direction: column;
+}
+.about .skills li figure svg {
+  height: 80px;
+  width: 80px;
+}
+.about .skills li figure svg.react-log > path {
+  fill: transparent;
 }
 .about .skills li h4 {
   color: #ffffff;
   font-size: 30px;
   line-height: 1.4;
   font-weight: 600;
+  padding-top: 20px;
 }/*# sourceMappingURL=main.css.map */

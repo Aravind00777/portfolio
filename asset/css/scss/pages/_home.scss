@@ -76,12 +76,25 @@
             background-color: $darkgrey2;
             @include display-f();
             @include border-radius(20px);
-
+            @include flex-direction(column);
+            figure{
+                svg{
+                    height: 80px;
+                    width: 80px;
+                    &.react-log{
+                        > path{
+                            fill: transparent;
+                        }
+                    }
+                    
+                }
+            }
             h4{
                 color: $white;
                 font-size: 30px;
                 line-height: 1.4;
                 font-weight: 600;
+                padding-top: 20px;
             }
         }
     }
