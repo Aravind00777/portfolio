@@ -212,14 +212,18 @@ footer .divider.divider4 {
 }
 footer .contact-footer {
   text-align: center;
-  margin-top: calc(-0.875081875rem - 6.8228484375vw);
+  margin-top: calc(-0.87507875rem - 6.562434375vw);
 }
 @media (min-width: 1920px) {
   footer .contact-footer {
-    margin-top: -9.0625rem;
+    margin-top: -8.75rem;
   }
 }
-
+footer .contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .banner {
   padding-top: calc(0.87505375rem + 4.479121875vw);
   background-color: #34353a;

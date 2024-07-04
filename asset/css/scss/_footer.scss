@@ -28,6 +28,12 @@ footer{
     }
     .contact-footer{
         @include text-align();
-        @include rfs(-145px , margin-top);
+        @include rfs(-140px , margin-top);
+    }
+    .contact-details{
+        @include display-f();
+        li{
+            
+        }
     }
 }
