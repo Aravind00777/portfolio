@@ -134,6 +134,11 @@
         li{
             @include display-f($align:flex-start);
             gap: 100px;
+            @include psudeo($right:unset , $left:120px ){
+                height: 100%;
+                width: 2px;
+                background-color: $yellow;
+            }
             .year{
                 @include flexw(100px);
             }
@@ -141,6 +146,7 @@
                 @include flexw(calc(100% - 100px));
                 h4{
                     @include rfs(35px , font-size);
+                    padding-bottom: 20px;
                 }
                 p{
                     @include rfs(25px , font-size);

@@ -387,6 +387,20 @@ header .navbar-light .navbar-nav .nav-link.active {
   align-items: flex-start;
   justify-content: center;
   gap: 100px;
+  position: relative;
+  z-index: 1;
+}
+.experience .experience-blk li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: unset;
+  left: 120px;
+  z-index: -1;
+  height: 100%;
+  width: 2px;
+  background-color: #ffc86b;
 }
 .experience .experience-blk li .year {
   max-width: 100px;
@@ -398,6 +412,7 @@ header .navbar-light .navbar-nav .nav-link.active {
 }
 .experience .experience-blk li .contents-blk h4 {
   font-size: calc(0.875013125rem + 1.0937390625vw);
+  padding-bottom: 20px;
 }
 @media (min-width: 1920px) {
   .experience .experience-blk li .contents-blk h4 {
