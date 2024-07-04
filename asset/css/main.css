@@ -170,6 +170,56 @@ header .navbar-light .navbar-nav .nav-link.active {
   box-shadow: unset;
 }
 
+footer {
+  padding-bottom: calc(0.87505375rem + 4.479121875vw);
+  padding-top: calc(0.87505375rem + 4.479121875vw);
+  position: relative;
+  z-index: 1;
+  background-color: #34353a;
+}
+@media (min-width: 1920px) {
+  footer {
+    padding-bottom: 6.25rem;
+  }
+}
+@media (min-width: 1920px) {
+  footer {
+    padding-top: 6.25rem;
+  }
+}
+footer .divider {
+  height: 2px;
+  background-color: #ffc86b;
+  width: 40%;
+  position: absolute;
+  z-index: -1;
+}
+footer .divider.divider1 {
+  left: 0;
+  top: 0;
+}
+footer .divider.divider2 {
+  right: 0;
+  top: 0;
+}
+footer .divider.divider3 {
+  left: 0;
+  bottom: 0;
+}
+footer .divider.divider4 {
+  right: 0;
+  bottom: 0;
+}
+footer .contact-footer {
+  text-align: center;
+  margin-top: calc(-0.875081875rem - 6.8228484375vw);
+}
+@media (min-width: 1920px) {
+  footer .contact-footer {
+    margin-top: -9.0625rem;
+  }
+}
+
 .banner {
   padding-top: calc(0.87505375rem + 4.479121875vw);
   background-color: #34353a;
@@ -387,20 +437,7 @@ header .navbar-light .navbar-nav .nav-link.active {
   align-items: flex-start;
   justify-content: center;
   gap: 100px;
-  position: relative;
-  z-index: 1;
-}
-.experience .experience-blk li::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: unset;
-  left: 120px;
-  z-index: -1;
-  height: 100%;
-  width: 2px;
-  background-color: #ffc86b;
+  margin-bottom: 100px;
 }
 .experience .experience-blk li .year {
   max-width: 100px;
@@ -409,6 +446,40 @@ header .navbar-light .navbar-nav .nav-link.active {
 .experience .experience-blk li .contents-blk {
   max-width: calc(100% - 100px);
   flex-basis: calc(100% - 100px);
+  position: relative;
+  z-index: 1;
+  position: relative;
+  z-index: 1;
+}
+.experience .experience-blk li .contents-blk::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  right: unset;
+  left: -60px;
+  z-index: -1;
+  height: 100%;
+  width: 2px;
+  background-color: #ffc86b;
+}
+.experience .experience-blk li .contents-blk::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -71px;
+  z-index: -1;
+  width: 25px;
+  height: 25px;
+  background-color: #ffc86b;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0px 0px 33px 0px rgb(255, 200, 107);
 }
 .experience .experience-blk li .contents-blk h4 {
   font-size: calc(0.875013125rem + 1.0937390625vw);

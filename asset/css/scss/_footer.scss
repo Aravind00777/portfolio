@@ -1,0 +1,33 @@
+footer{
+    @include rfs(100px , padding-bottom);
+    @include rfs(100px , padding-top);
+    @include relation();
+    background-color: $darkgery;
+    .divider{
+        height: 2px;
+        background-color: $yellow;
+        width: 40%;
+        @include relation($rel:absolute , $index:-1);
+        &.divider1{
+            left: 0;
+            top: 0;
+        }
+        &.divider2{
+            right: 0;
+            top: 0;
+        }
+        &.divider3{
+            left: 0;
+            bottom: 0;
+        }
+        &.divider4{
+            right: 0;
+            bottom: 0;
+            
+        }
+    }
+    .contact-footer{
+        @include text-align();
+        @include rfs(-145px , margin-top);
+    }
+}
