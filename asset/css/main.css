@@ -203,4 +203,58 @@ header .navbar-light .navbar-nav .nav-link.active {
   width: 100%;
   object-fit: contain;
   height: 100%;
+}
+
+.about {
+  padding-top: calc(0.87505375rem + 4.479121875vw);
+  padding-bottom: calc(0.87505375rem + 4.479121875vw);
+  background-color: #34353a;
+}
+@media (min-width: 1920px) {
+  .about {
+    padding-top: 6.25rem;
+  }
+}
+@media (min-width: 1920px) {
+  .about {
+    padding-bottom: 6.25rem;
+  }
+}
+.about h2 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: calc(0.87501625rem + 1.354153125vw);
+}
+@media (min-width: 1920px) {
+  .about h2 {
+    padding-bottom: 2.5rem;
+  }
+}
+.about .about_me {
+  padding-left: calc(0.875035rem + 2.9166375vw);
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 1920px) {
+  .about .about_me {
+    padding-left: 4.375rem;
+  }
+}
+.about .about_me::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  right: unset;
+  left: 0;
+  z-index: -1;
+  background-color: #ffc86b;
+  width: 55px;
+  height: 2px;
+}
+.about .about_me p {
+  font-size: 30px;
+  line-height: 1.4;
+  color: #ababae;
 }/*# sourceMappingURL=main.css.map */
