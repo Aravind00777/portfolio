@@ -226,6 +226,8 @@ footer .contact-details {
   align-items: center;
   justify-content: center;
   padding-top: calc(0.875038125rem + 3.1770515625vw);
+  flex-wrap: wrap;
+  gap: 30px;
 }
 @media (min-width: 1920px) {
   footer .contact-details {
@@ -234,8 +236,14 @@ footer .contact-details {
 }
 footer .contact-details li {
   background-color: #3d3e42;
-  max-width: 50%;
-  flex-basis: 50%;
+  max-width: 45%;
+  flex-basis: 45%;
+  padding: 13px 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -244,6 +252,30 @@ footer .contact-details li {
 footer .contact-details li .footer-icons {
   max-width: 80px;
   flex-basis: 80px;
+  height: 80px;
+}
+footer .contact-details li .footer-icons img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+footer .contact-details li .footer-icons svg path {
+  fill: #ffffff;
+}
+footer .contact-details li a {
+  margin-left: 20px;
+  display: block;
+  font-size: 25px;
+  color: #ffc86b;
+  line-height: 1.6;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+footer .contact-details li a:hover {
+  color: #ffffff;
 }
 
 .banner {

@@ -34,14 +34,39 @@ footer{
     .contact-details{   
         @include display-f();
         @include rfs(75px , padding-top);
+        flex-wrap: wrap;
+        gap: 30px;
         li{
             
             background-color: $darkgrey2;
-            @include flexw(50%);
+            @include flexw(45%);
+            
+            padding: 13px 20px;
+            @include border-radius(20px);
             width: 100%;
             @include display-f();
             .footer-icons{
                 @include flexw(80px);
+                height: 80px;
+                img{
+                    @include fit-image();
+                }
+                svg{
+                    path{
+                        fill:$white;
+                    }
+                }
+            }
+            a{
+                margin-left: 20px;
+                display: block;
+                font-size: 25px;
+                color: $yellow;
+                line-height: 1.6;
+                @include tranistions-;
+                &:hover{
+                    color: $white;
+                }
             }
         }
     }
