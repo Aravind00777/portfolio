@@ -1,70 +1,82 @@
-footer{
-    @include rfs(100px , padding-bottom);
-    @include rfs(100px , padding-top);
+footer {
+    @include rfs(100px, padding-bottom);
+    @include rfs(100px, padding-top);
     @include relation();
     background-color: $darkgery;
-    .divider{
+
+    .divider {
         height: 2px;
         background-color: $yellow;
         width: 40%;
-        @include relation($rel:absolute , $index:-1);
-        &.divider1{
+        @include relation($rel: absolute, $index: -1);
+
+        &.divider1 {
             left: 0;
             top: 0;
         }
-        &.divider2{
+
+        &.divider2 {
             right: 0;
             top: 0;
         }
-        &.divider3{
+
+        &.divider3 {
             left: 0;
             bottom: 0;
         }
-        &.divider4{
+
+        &.divider4 {
             right: 0;
             bottom: 0;
-            
+
         }
-    }   
-    .contact-footer{
+    }
+
+    .contact-footer {
         @include text-align();
         @include relation();
-        @include rfs(-140px ,margin-top);
+        @include rfs(-140px, margin-top);
     }
-    .contact-details{   
+
+    .contact-details {
         @include display-f();
-        @include rfs(75px , padding-top);
+        @include rfs(75px, padding-top);
         flex-wrap: wrap;
         gap: 30px;
-        li{
-            
+
+        li {
+
             background-color: $darkgrey2;
             @include flexw(45%);
-            
+
             padding: 13px 20px;
             @include border-radius(20px);
             width: 100%;
             @include display-f();
-            .footer-icons{
+
+            .footer-icons {
                 @include flexw(80px);
                 height: 80px;
-                img{
+
+                img {
                     @include fit-image();
                 }
-                svg{
-                    path{
-                        fill:$white;
+
+                svg {
+                    path {
+                        fill: $white;
                     }
                 }
             }
-            a{
+
+            a {
                 margin-left: 20px;
                 display: block;
                 font-size: 25px;
                 color: $yellow;
                 line-height: 1.6;
                 @include tranistions-;
-                &:hover{
+                &:hover {
                     color: $white;
                 }
             }
