@@ -82,4 +82,11 @@ footer {
             }
         }
     }
+    .footer-social-iocns{
+        @include display-f;
+        flex-wrap: wrap;
+        li{
+            @include flexw(80px);
+        }
+    }
 }

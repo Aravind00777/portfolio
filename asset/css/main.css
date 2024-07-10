@@ -277,6 +277,16 @@ footer .contact-details li a {
 footer .contact-details li a:hover {
   color: #ffffff;
 }
+footer .footer-social-iocns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer .footer-social-iocns li {
+  max-width: 80px;
+  flex-basis: 80px;
+}
 
 .banner {
   padding-top: calc(0.87505375rem + 4.479121875vw);
