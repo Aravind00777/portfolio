@@ -83,6 +83,14 @@ header .navbar-light .navbar-nav .nav-link {
 header .navbar-light .navbar-nav .nav-link.active {
   color: #ffffff;
 }
+header .navbar-brand {
+  max-width: 64px;
+}
+header .navbar-brand img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
 
 #nav-burger {
   transform: rotate(0deg);

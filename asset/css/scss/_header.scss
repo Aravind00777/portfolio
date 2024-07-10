@@ -13,4 +13,10 @@ header{
             }
         }
     }
+    .navbar-brand{
+        max-width: 64px;
+        img{
+            @include fit-image();
+        }
+    }
 }
