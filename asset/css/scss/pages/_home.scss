@@ -1,7 +1,7 @@
 .banner {
     @include rfs(100px, padding-top);
     background-color: $darkgery;
-
+    box-shadow: 0px 38px 39px -20px rgba(52,53,58,1);
     h1 {
         color: $lightgrey2;
         font-size: 46px;
@@ -56,7 +56,7 @@
 .about {
     @include rfs(100px, padding-top);
     @include rfs(100px, padding-bottom);
-    background-color: $darkgery;
+    background-color: $darkgrey3;
     h2 {
         @include rfs(40px , padding-bottom);
         &.myskills{

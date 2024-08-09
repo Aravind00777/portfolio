@@ -303,6 +303,7 @@ footer .footer-social-iocns li a svg path {
 .banner {
   padding-top: calc(0.87505375rem + 4.479121875vw);
   background-color: #34353a;
+  box-shadow: 0px 38px 39px -20px rgb(52, 53, 58);
 }
 @media (min-width: 1920px) {
   .banner {
@@ -376,7 +377,7 @@ footer .footer-social-iocns li a svg path {
 .about {
   padding-top: calc(0.87505375rem + 4.479121875vw);
   padding-bottom: calc(0.87505375rem + 4.479121875vw);
-  background-color: #34353a;
+  background-color: #31333b;
 }
 @media (min-width: 1920px) {
   .about {
