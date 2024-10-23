@@ -136,10 +136,10 @@
             gap: 100px;
             margin-bottom: 100px;
             .year{
-                @include flexw(100px);
+                @include flexw(200px);
             }
             .contents-blk{
-                @include flexw(calc(100% - 100px));
+                @include flexw(calc(100% - 200px));
                 @include psudeo($right:unset , $left:-60px ,$top:40px ){
                     height: 100%;
                     width: 2px;
