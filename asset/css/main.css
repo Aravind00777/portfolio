@@ -580,4 +580,56 @@ footer .footer-social-iocns li a svg path {
   .experience .experience-blk li .contents-blk p {
     font-size: 1.5625rem;
   }
+}
+
+.myworks {
+  padding: calc(0.87505375rem + 4.479121875vw) 0;
+  background-color: #31333b;
+}
+@media (min-width: 1920px) {
+  .myworks {
+    padding: 6.25rem 0;
+  }
+}
+.myworks .project__head {
+  padding-bottom: calc(0.8750225rem + 1.87498125vw);
+  text-align: center;
+}
+@media (min-width: 1920px) {
+  .myworks .project__head {
+    padding-bottom: 3.125rem;
+  }
+}
+.myworks .myprojects {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.myworks .myprojects a {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  display: block;
+}
+.myworks .myprojects a:hover img {
+  transform: scale(1.1);
+}
+.myworks .myprojects a img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
 }/*# sourceMappingURL=main.css.map */

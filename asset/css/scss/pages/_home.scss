@@ -10,7 +10,7 @@
             color: $yellow;
             font-size: 55px;
             font-weight: bold;
-        }
+        }  
     }
 
     .banner-wrapper {
@@ -164,5 +164,33 @@
             }
         }
         
+    }
+}
+.myworks{
+    @include rfs(100px 0,padding);
+    background-color: $darkgrey3;
+    .project__head{
+        @include rfs(50px , padding-bottom);
+        @include text-align;
+
+    }
+    .myprojects{
+        @include grid($colums: 33% 33% 33% ,$rowgap:20px ,$columngap:20px);
+        a{
+            @include border-radius(30px);
+            overflow: hidden;
+            @include tranistions-;
+            &:hover{
+               
+                img{
+                    transform: scale(1.1);
+                }
+            }
+            display: block;
+            img{
+                @include fit-image;
+                @include tranistions-;
+            }
+        }
     }
 }

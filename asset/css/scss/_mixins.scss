@@ -1,4 +1,4 @@
-@mixin display-f($align:center , $jc: center) {
+  @mixin display-f($align:center , $jc: center) {
     display: flex;
     align-items: $align;
     justify-content: $jc;
