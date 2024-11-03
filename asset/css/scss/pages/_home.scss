@@ -179,6 +179,7 @@
         a{
             @include border-radius(30px);
             overflow: hidden;
+            height: 100%;
             @include tranistions-;
             &:hover{
                
