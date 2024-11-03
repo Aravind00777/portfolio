@@ -76,11 +76,26 @@ header {
   background-color: #34353a;
   padding: 16px 30px;
 }
+header.active {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  left: 0;
+  animation: header-anime 0.7s;
+}
 header .navbar-light .navbar-nav .nav-link {
   color: #a7a7a9;
   font-size: 20px;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
 }
 header .navbar-light .navbar-nav .nav-link.active {
+  color: #ffffff;
+}
+header .navbar-light .navbar-nav .nav-link:hover {
   color: #ffffff;
 }
 header .navbar-brand {
@@ -92,6 +107,14 @@ header .navbar-brand img {
   height: 100%;
 }
 
+@keyframes header-anime {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0;
+  }
+}
 #nav-burger {
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);

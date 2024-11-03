@@ -1,13 +1,25 @@
 header{
     background-color:$darkgery;
     padding: 16px 30px;
+    &.active{
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        // top: -200px;
+       left: 0;
+        animation: header-anime .7s ;
+    }
     
     .navbar-light {
         .navbar-nav{
             .nav-link{
                 color: $lightgrey;
                 font-size: 20px;
+                @include tranistions-;
                 &.active{
+                    color: $white;
+                }
+                &:hover{
                     color: $white;
                 }
             }
@@ -18,5 +30,13 @@ header{
         img{
             @include fit-image();
         }
+    }
+}
+@keyframes header-anime{
+    0%{
+        top: -200px;
+    }
+    100%{
+        top: 0;
     }
 }
