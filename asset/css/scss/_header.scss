@@ -7,6 +7,7 @@ header{
         width: 100%;
         // top: -200px;
        left: 0;
+       @include box-shadow(0px 4px 12px -5px rgba(0,0,0,0.75));
         animation: header-anime .7s ;
     }
     

@@ -81,6 +81,7 @@ header.active {
   z-index: 999;
   width: 100%;
   left: 0;
+  box-shadow: 0px 4px 12px -5px rgba(0, 0, 0, 0.75);
   animation: header-anime 0.7s;
 }
 header .navbar-light .navbar-nav .nav-link {
