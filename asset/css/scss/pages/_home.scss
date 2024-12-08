@@ -73,6 +73,9 @@
                 background-color: $yellow;
                 width: 55px;
                 height: 2px;
+                @include mq(xxl){
+                    width: 40px;
+                }
             }
         p {
             font-size: 30px;
@@ -96,6 +99,9 @@
             @include border-radius(20px);
             @include flex-direction(column);
             @include tranistions-;
+            @include mq(laptop){
+                height: 215px;
+            }
 
             &:hover{
                 background-color: $yellow;
@@ -175,7 +181,7 @@
 
     }
     .myprojects{
-        @include grid($colums: 33% 33% 33% ,$rowgap:20px ,$columngap:20px);
+        @include grid($colums: 32% 32% 32% ,$rowgap:20px ,$columngap:2%);
         a{
             @include border-radius(30px);
             overflow: hidden;

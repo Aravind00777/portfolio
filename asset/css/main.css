@@ -59,6 +59,11 @@ ol, ul, li {
   max-width: 1400px;
   margin: 0 auto;
 }
+@media (max-width: 1399px) {
+  .container {
+    padding: 0 30px;
+  }
+}
 
 h2 {
   color: #ffffff;
@@ -453,6 +458,11 @@ footer .footer-social-iocns li a svg path {
   width: 55px;
   height: 2px;
 }
+@media (max-width: 1399px) {
+  .about .about_me::after {
+    width: 40px;
+  }
+}
 .about .about_me p {
   font-size: 30px;
   line-height: 1.4;
@@ -491,6 +501,11 @@ footer .footer-social-iocns li a svg path {
   -moz-transition: 0.4s ease-in-out;
   -ms-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
+}
+@media (max-width: 1199px) {
+  .about .skills li {
+    height: 215px;
+  }
 }
 .about .skills li:hover {
   background-color: #ffc86b;
@@ -626,9 +641,9 @@ footer .footer-social-iocns li a svg path {
 }
 .myworks .myprojects {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 32% 32% 32%;
   row-gap: 20px;
-  column-gap: 20px;
+  column-gap: 2%;
 }
 .myworks .myprojects a {
   border-radius: 30px;
