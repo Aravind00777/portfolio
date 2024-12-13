@@ -26,7 +26,7 @@ $(document).ready(function(){
   });
 
   gsap.from(".contactme", {
-    opacity: 0,
+    opacity: 1,
     duration: 1.5,
     y: 30,
     delay: 1.5
@@ -50,8 +50,39 @@ $(document).ready(function(){
     yoyo: true,
     ease: "ease-in-out"
   });
+  gsap.registerPlugin(ScrollTrigger);
 
-  
+  // Typewriter effect animation
+  gsap.fromTo(
+    ".about_me p",
+    {
+      width: "0", // Start with zero width
+    },
+    {
+      width: "100%", // Expand to full width
+      duration: 2, // Adjust typing duration
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: ".about", // Trigger animation when the About section is in view
+        start: "top 80%", // Trigger starts when the top of the section is 80% visible
+        toggleActions: "play none none none", // Play animation once
+      },
+    }
+  );
+   
+    // Animate the project images
+    gsap.from(".myprojects li", {
+        y: 100, // Slide in from below
+        opacity: 0, // Start fully transparent
+        duration: 1, // Animation duration
+        stagger: 0.3, // Delay between animations for each list item
+        ease: "power3.out", // Smooth easing
+        scrollTrigger: {
+          trigger: ".myworks", // Start animation when this section comes into view
+          start: "top 80%", // Trigger when top of the section is 80% visible
+          toggleActions: "play none none none", // Play animation once
+        },
+      });
   
   
 })
